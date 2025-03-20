@@ -1,0 +1,42 @@
+.card{
+    position: relative;
+    width: 300px;
+    height: 230px;
+    box-shadow: 0 0 5px black; /*knp ada tiga angka*/
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s; /*kenapa ditaruh disini*/
+    border-radius: 10px;
+}
+
+.card .gambar{
+    position: absolute; /*jenis-jenis position ap aja*/
+    width: 100%;
+}
+
+.card:hover .gambar img{ /*kenapa harus dua class ini?*/
+    scale: 1.2;
+    transition: 0.5s;
+}
+
+.card .gambar img{
+    width: 100%;
+}
+
+.card .deskripsi{
+    position: absolute;
+    top: 210px;
+    padding: 0px 10px; /*bwt ap*/
+    transition: 0.5s; /*kenapa ditaruh disini*/
+}
+
+.card:hover .deskripsi{
+    top: 0px;
+}
+
+.card .deskripsi a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+}
