@@ -1,0 +1,304 @@
+/* CSS UNTUK GALERO */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /* biar top nav-nya nempel ke atas, gaada semacam */
+    margin: 0; 
+    padding: 0;
+    background-image: url('white.jpg');
+    background-size: 100%;
+    font-family: 'ubuntu';
+}
+
+h1{
+    color: rgb(170, 118, 70);
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    color: rgb(165, 56, 29);
+}
+h3{
+    text-align: center;
+    margin-left: 10%; margin-right: 10%;
+    color: seashell;
+}
+p{
+    text-align: center;
+}
+
+.dummyline{
+    opacity: 0;
+}
+
+                                            /*STYLE UTK TOP NAVIGATION/HEADER*/
+
+.material-symbols-outlined{
+    vertical-align: -5px;
+}
+
+.navbar { /*utk semua item navbar*/
+        display: flex;
+        align-items: center;
+        width: 100%;
+        z-index: 999;
+        position: fixed;
+        justify-content: space-between;
+        background: repeating-linear-gradient( /*utk grad warna biru atas tea*/
+            to left,
+            #522d1d, 8.7%,
+            #724429 8.7%,
+            #c77c3f 18.1%,
+            #bb6f50 28.4%, #3d62a5 40%,
+            #8099c7 40%, #4570c2 50%,
+            #5389cf 50%, #5389cf 60%,
+            #6199e2 60%, #8da9ce 70%,
+            #6f84a0 70%, #79aef3 80%,
+            #a0c8fc 80%, #ffffff 90%,
+            #ffffff 90%, white 100%
+        );
+        display: flex;
+        align-items: center;
+        padding: 10px;
+}
+   
+.nin a { /*utk segala link di navbar*/
+    text-align: center;
+    padding: 8px 30px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+   
+.nin a:hover { /*ketika segala link navbar disentuh*/
+    background-color: rgb(20, 140, 220);
+    border-radius: 20px;
+    transition: 0.5s;
+    font-size: 20px;
+    color: white;
+    transition: 0.3s;
+}
+
+
+
+.nav-logo { /*utk logo disamping profile icon*/
+    width: 50px;
+    margin-right: auto;
+    margin-left: 3%;
+}
+ 
+.profilelogog{
+    width: 10px;
+}
+
+#profile-card-icon{ /*utk profile icon*/
+    font-size: 45px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+   
+}
+#profile-card-icon:hover{ /*ketika profile icon disentuh*/
+    filter:drop-shadow(0px 0px 5px rgb(7, 54, 124));
+}
+#profile-card-icon:active { /*ketika profile icon ditekan*/
+    transform: scale(0.8);
+}
+
+
+
+
+/* PRODUCT */
+.product{
+    padding-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.produk{
+    display: flex;
+    transition: 0.3s;
+}
+
+.realfoto{
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    z-index: 1;
+    margin: 10px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 5px black;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.objek{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 0 5px black;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.foto{
+    margin: 2%;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 0 5px black;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.detail{
+    z-index: 1;
+    position: relative;
+    width: 300px;
+    height: 0px;
+    overflow: hidden;
+    text-align: center;
+    opacity: 0;
+    border-radius: 10px;
+    transform: 0.3s ease;
+    top: 0px;
+}
+
+
+
+/* other */
+.product h1{
+    margin-top: 5%;
+}
+.card .gambar img{
+    width: 100%;
+    transition: 0.5s; /*Ketika gbr di unhover*/
+}
+.objek .gambar img{
+    width: 100%;
+    transition: 0.5s; /*Ketika gbr di unhover*/
+}
+.detail .deskripsifoto{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0px;
+    padding: 0px 10px;
+    transition: 0.5s;
+    box-shadow: 0 0 5px black;
+    border-radius: 10px;
+}
+
+.deskripsifoto h1{
+    color: goldenrod;
+}
+.deskripsifoto p{
+    color: white;
+}
+
+/* hovers */
+.foto:hover img{
+    transform: scale(1.2);
+    rotate:2deg; 
+    transition: 0.5s;
+}
+
+.foto:hover .detail{
+    transform: translateY(-150px);
+    scale: 1.1;
+    opacity: 1;
+    transition: 0.5s;
+    overflow: visible;
+}
+
+.objek:hover .detail{
+    top: 100px;
+    transition: 0.3s;
+}
+
+
+.gambar:hover .detail{
+    top: 200px;
+    transition: 0.5s;
+}
+
+.card .deskripsi a:hover{
+    background-color: rgb(4, 80, 10);
+    transition: 0.3s;
+}
+
+.produk:hover .gambar{
+    transform: scale(1.2);
+    rotate:2deg; 
+    transition: 0.5s;
+}
+
+
+/* FOOTER */
+
+.footercontact{
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+    padding: 10px 10px;
+    background: repeating-linear-gradient( /*utk grad warna biru atas tea*/
+            to left,
+            #833e2d 0%, #833e2d 10%,
+            #9e5e44 10%, #9e5e44 20%,
+            #d6a47b 20%, #d6a47b 30%,
+            #e5bfa5 30%,#e5bfa5 40%,
+            #ebd7ca 40%, #ebd7ca 50%,
+            #98bfdf 50%, #98bfdf 60%,
+            #61a8e2 60%, #61a8e2 70%,
+            #5490c2 70%, #5490c2 80%,
+            #4883b3 80%, #4883b3 84%,
+            #ffffff 90%,#ffffff 100%
+        );
+}
+
+.footercontact a{
+    align-items: center;
+    margin-inline: 7%;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+.footercontact .yt:hover{
+    color: rgb(168, 3, 3);
+    transition: 0.3s;
+    font-size: 25px;
+}
+.footercontact .ins:hover{
+    color: rgb(155, 12, 79);
+    transition: 0.3s;
+    font-size: 25px;
+}
+.footercontact .fc:hover{
+    color: rgb(6, 55, 95);
+    transition: 0.3s;
+    font-size: 25px;
+}
+.footercontact .env:hover{
+    color: rgb(51, 51, 51);
+    transition: 0.3s;
+    font-size: 25px;
+}
+
+footer{
+    margin-top: auto;
+}
