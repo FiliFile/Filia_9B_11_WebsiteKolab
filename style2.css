@@ -7,6 +7,7 @@ body{
     background-image: url('shrimpbg.jpg');
     background-size: cover;
     font-family: 'ubuntu';
+    height: 100vh;
 }
 
 h1{
@@ -35,28 +36,28 @@ p{
 }
 
 .navbar { /*utk semua item navbar*/
-        display: flex;
-        align-items: center;
-        width: 100%;
-        z-index: 999;
-        position: fixed;
-        justify-content: space-between;
-        background: repeating-linear-gradient( /*utk grad warna biru atas tea*/
-            to left,
-            #522d1d, 8.7%,
-            #724429 8.7%,
-            #c77c3f 18.1%,
-            #bb6f50 28.4%, #3d62a5 40%,
-            #8099c7 40%, #4570c2 50%,
-            #5389cf 50%, #5389cf 60%,
-            #6199e2 60%, #8da9ce 70%,
-            #6f84a0 70%, #79aef3 80%,
-            #a0c8fc 80%, #ffffff 90%,
-            #ffffff 90%, white 100%
-        );
-        display: flex;
-        align-items: center;
-        padding: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    justify-content: space-between;
+    background: repeating-linear-gradient( /*utk grad warna biru atas tea*/
+        to left,
+        #83332d 0%, #83332d 10%,
+        #9e4e44 10%, #9e4e44 20%,
+        #d6957b 20%, #d6957b 30%,
+        #e5b7a5 30%,#e5bfa5 40%,
+        #ebd4ca 40%, #ebd7ca 50%,
+        #83a9c9 50%, #83a9c9 60%,
+        #688caa 60%, #688caa 70%,
+        #5a7891 70%, #5a7891 80%,
+        #546f85 80%, #546f85 84%,
+        #ffffff 90%,#ffffff 100%
+    );
+    display: flex;
+    align-items: center;
+    padding: 10px;
 }
    
 .nin a { /*utk segala link di navbar*/
@@ -108,7 +109,8 @@ p{
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    background-color: #221613;
+    background-color: #bdbdbd;
+    border-radius: 20px;
 }
 .profile-buttons i{
     color: white;
@@ -118,13 +120,15 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .profile-card{ /*profile umum*/
     background-color: #bdbdbd;
     width: 350px;
     transition: 0.3s;
+    border-radius: 20px;
 }
 .profile-card:hover{
     transform: scale(1.2) rotate(-2deg);
@@ -160,7 +164,7 @@ p{
     padding: 25px;
 }
 .profile-body h2{
-    color: #115508;
+    color: #551408;
     font-size: 23px;
 }
 .profile-body p{
@@ -238,7 +242,7 @@ p{
     font-size: 25px;
 }
 .footercontact .env:hover{
-    color: rgb(51, 51, 51);
+    color: rgb(10, 85, 99);
     transition: 0.3s;
     font-size: 25px;
 }
